@@ -11,13 +11,20 @@ nav:
     - DaiMaSuiXiangLu:
       - day1 数组part01: ALGORITHM/DaiMaSuiXiangLu/day1_Array_part01.md
       - day2 数组part02: ALGORITHM/DaiMaSuiXiangLu/day2_Array_part02.md
-  - 博客:
+      - day3 链表part01: ALGORITHM/DaiMaSuiXiangLu/day3_LinkedList_part01.md
+      - day4 链表part02: ALGORITHM/DaiMaSuiXiangLu/day4_LinkedList_part02.md
+      - day6 哈希表part01: ALGORITHM/DaiMaSuiXiangLu/day6_HashTable_part01.md
+      - day7 哈希表part02: ALGORITHM/DaiMaSuiXiangLu/day7_HashTable_part02.md
+      - day8 字符串part01: ALGORITHM/DaiMaSuiXiangLu/day8_String_part01.md
+      - day9 字符串part02: ALGORITHM/DaiMaSuiXiangLu/day9_String_part02.md
+      - day10 栈和队列part01: ALGORITHM/DaiMaSuiXiangLu/day10_StackAndQueue_part01.md
+  - 项目学习:
     - PROJECTS/index.md
     - BUSTUB:
       - p1 buffer pool: PROJECTS/BUSTUB/Bustub_1.md
   - 我:
     - ME/index.md
-    
+
 
 
 # [UI]
