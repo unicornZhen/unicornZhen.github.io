@@ -1,6 +1,6 @@
 # 欢迎来到我的个人博客
 
-这是UnicornZhen的个人博客<https://unicornZhen.github.io> :smile:
+这是UnicornZhen的个人博客<https://unicornZhen.github.io>
 
 - 通过主题和目录以打开文章
     - PC端 在上方标签栏选择主题 在左侧目录选择文章
