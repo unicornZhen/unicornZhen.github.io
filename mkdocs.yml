@@ -18,6 +18,7 @@ nav:
       - day8 字符串part01: ALGORITHM/DaiMaSuiXiangLu/day8_String_part01.md
       - day9 字符串part02: ALGORITHM/DaiMaSuiXiangLu/day9_String_part02.md
       - day10 栈和队列part01: ALGORITHM/DaiMaSuiXiangLu/day10_StackAndQueue_part01.md
+      - day11 栈和队列part02: ALGORITHM/DaiMaSuiXiangLu/day11_StackAndQueue_part02.md
   - 项目学习:
     - PROJECTS/index.md
     - BUSTUB:
