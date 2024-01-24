@@ -19,6 +19,9 @@ nav:
       - day9 字符串part02: ALGORITHM/DaiMaSuiXiangLu/day9_String_part02.md
       - day10 栈和队列part01: ALGORITHM/DaiMaSuiXiangLu/day10_StackAndQueue_part01.md
       - day11 栈和队列part02: ALGORITHM/DaiMaSuiXiangLu/day11_StackAndQueue_part02.md
+      - day13 栈和队列part03: ALGORITHM/DaiMaSuiXiangLu/day13_StackAndQueue_part03.md
+      - day14 二叉树part01: ALGORITHM/DaiMaSuiXiangLu/day14_BinaryTree_part01.md
+      - day15 二叉树part02: ALGORITHM/DaiMaSuiXiangLu/day15_BinaryTree_part02.md
   - 项目学习:
     - PROJECTS/index.md
     - BUSTUB:
