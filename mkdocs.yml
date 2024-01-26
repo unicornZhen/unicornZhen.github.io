@@ -22,10 +22,16 @@ nav:
       - day13 栈和队列part03: ALGORITHM/DaiMaSuiXiangLu/day13_StackAndQueue_part03.md
       - day14 二叉树part01: ALGORITHM/DaiMaSuiXiangLu/day14_BinaryTree_part01.md
       - day15 二叉树part02: ALGORITHM/DaiMaSuiXiangLu/day15_BinaryTree_part02.md
+      - day16 二叉树part03: ALGORITHM/DaiMaSuiXiangLu/day16_BinaryTree_part03.md
+      - day17 二叉树part04: ALGORITHM/DaiMaSuiXiangLu/day17_BinaryTree_part04.md
+    - ReadingNote:
+      - hello-algo-readnote阅读笔记: ALGORITHM/ReadingNote/hello-algo-readnote.md
   - 项目学习:
     - PROJECTS/index.md
     - BUSTUB:
-      - p1 buffer pool: PROJECTS/BUSTUB/Bustub_1.md
+      - p0 C++ primer: PROJECTS/BUSTUB/P0_C++Primer.md
+      - p1 buffer pool: PROJECTS/BUSTUB/P1_Buffer_Pool_Manager.md
+      - 多线程调试: PROJECTS/BUSTUB/DebugMutilThreads.md
   - 我:
     - ME/index.md
 
