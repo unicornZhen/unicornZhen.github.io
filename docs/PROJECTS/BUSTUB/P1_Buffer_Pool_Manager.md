@@ -1,43 +1,23 @@
 ## 总体设计目标
-TODO：
-- thread safe
+完成数据库的缓存管理模块
+
 ## Task #1 - LRU-K Replacement Policy
-* 基本完成LRU-K的实现。
-* TODO：用p0中学到的智能指针优化性能。
+* 完成LRU-K的实现并保证实现是线程安全的
 * LRU-K的定义：当多个帧具有back_k_distance为inf+时，选择出现最早的一个帧驱逐
+* **坑**：但驱逐多个back_k_distance时，要驱逐最早出现的一个帧，并不是按照传统的LRU算法
 
-```
-std::unordered_map<frame_id_t, LRUKNode> node_store_; 
-size_t current_timestamp_{0};  
-size_t curr_size_{0};  
-  
-
-size_t replacer_size_;  
-size_t k_;  
-std::mutex latch_;
-```
 ## Task#2 - Disk Scheduler
-* Promise与future在线程之间同步与发送信息
+
+* Promise与future是C++17的新特性，可以用于线程之间的PV操作或者发送信息
+* **坑**：这个Task基本没有坑
 
 ## Task#3-Buffer Pool Manager
 * 基于Task#1和Task#2所实现的东西，实现bufferPoolManager
-* 注意bench的使用
+* bpm_bench.cpp用来测试bpm的读取和写的并发性能，调试多线程是一大难点
+* **坑**：主要来自于对于各个函数实现细节和要完成功能不明确造成的，这个要通过分析测例和仔细理解题目意思来解决
 
-```
-const size_t pool_size_;  
-std::atomic<page_id_t> next_page_id_ = 0;  
-Page *pages_;  
-std::unique_ptr<DiskScheduler> disk_scheduler_ __attribute__((__unused__));  
-LogManager *log_manager_ __attribute__((__unused__));  
-std::unordered_map<page_id_t, frame_id_t> page_table_;  
-std::unique_ptr<LRUKReplacer> replacer_;  
-std::list<frame_id_t> free_list_;  
-std::mutex latch_;
-```
+## 总结与收获
 
-bug:
-- FetchPage和UnpinPage可能存在并发问题
-
-## clion中调试多线程
-
-* 
+* 理解题目意思，做这种题目要连续做，一气呵成，断断续续做很浪费时间
+* Promise和future的使用
+* 体会到测例的重要性和多线程调试的不确定性

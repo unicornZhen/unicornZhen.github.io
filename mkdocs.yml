@@ -26,14 +26,18 @@ nav:
       - day17 二叉树part04: ALGORITHM/DaiMaSuiXiangLu/day17_BinaryTree_part04.md
       - day18 二叉树part05: ALGORITHM/DaiMaSuiXiangLu/day18_BinaryTree_part05.md
       - day20 二叉树part06: ALGORITHM/DaiMaSuiXiangLu/day20_BinaryTree_part06.md
+      - day21 二叉树part07: ALGORITHM/DaiMaSuiXiangLu/day21_BinaryTree_part07.md
+      - day22 二叉树part08: ALGORITHM/DaiMaSuiXiangLu/day22_BinaryTree_part08.md
+      - day23 二叉树part09: ALGORITHM/DaiMaSuiXiangLu/day23_BinaryTree_part09.md
     - ReadingNote:
       - hello-algo-readnote阅读笔记: ALGORITHM/ReadingNote/hello-algo-readnote.md
   - 项目学习:
     - PROJECTS/index.md
     - BUSTUB:
       - p0 C++ primer: PROJECTS/BUSTUB/P0_C++Primer.md
-      - p1 buffer pool: PROJECTS/BUSTUB/P1_Buffer_Pool_Manager.md
+      - p1 buffer pool manager: PROJECTS/BUSTUB/P1_Buffer_Pool_Manager.md
       - 多线程调试: PROJECTS/BUSTUB/DebugMutilThreads.md
+      - p2 extendible_hash_index: PROJECTS/BUSTUB/P2_EXTENDIBLE_HASH_INDEX.md
   - 我:
     - ME/index.md
 
