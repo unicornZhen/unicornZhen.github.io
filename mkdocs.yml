@@ -29,6 +29,10 @@ nav:
       - day21 二叉树part07: ALGORITHM/DaiMaSuiXiangLu/day21_BinaryTree_part07.md
       - day22 二叉树part08: ALGORITHM/DaiMaSuiXiangLu/day22_BinaryTree_part08.md
       - day23 二叉树part09: ALGORITHM/DaiMaSuiXiangLu/day23_BinaryTree_part09.md
+      - day24 回溯法part01: ALGORITHM/DaiMaSuiXiangLu/day24_Backtracking_part01.md
+      - day25 回溯法part02: ALGORITHM/DaiMaSuiXiangLu/day25_Backtracking_part02.md
+      - day27 回溯法part03: ALGORITHM/DaiMaSuiXiangLu/day27_Backtracking_part03.md
+      - day28 回溯法part04: ALGORITHM/DaiMaSuiXiangLu/day28_Backtracking_part04.md
     - ReadingNote:
       - hello-algo-readnote阅读笔记: ALGORITHM/ReadingNote/hello-algo-readnote.md
   - 项目学习:
