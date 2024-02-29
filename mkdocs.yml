@@ -33,6 +33,12 @@ nav:
       - day25 回溯法part02: ALGORITHM/DaiMaSuiXiangLu/day25_Backtracking_part02.md
       - day27 回溯法part03: ALGORITHM/DaiMaSuiXiangLu/day27_Backtracking_part03.md
       - day28 回溯法part04: ALGORITHM/DaiMaSuiXiangLu/day28_Backtracking_part04.md
+      - day29 回溯法part05: ALGORITHM/DaiMaSuiXiangLu/day29_Backtracking_part05.md
+      - day30 回溯法part06: ALGORITHM/DaiMaSuiXiangLu/day30_Backtracking_part06.md
+      - day31 贪心法part01: ALGORITHM/DaiMaSuiXiangLu/day31_Greedy_part01.md
+      - day32 贪心法part02: ALGORITHM/DaiMaSuiXiangLu/day32_Greedy_part02.md
+      - day33 贪心法part03: ALGORITHM/DaiMaSuiXiangLu/day33_Greedy_part03.md
+      - day34 贪心法part04: ALGORITHM/DaiMaSuiXiangLu/day34_Greedy_part04.md
     - ReadingNote:
       - hello-algo-readnote阅读笔记: ALGORITHM/ReadingNote/hello-algo-readnote.md
   - 项目学习:
