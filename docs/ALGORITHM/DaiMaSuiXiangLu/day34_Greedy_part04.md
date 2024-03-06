@@ -1,97 +1,70 @@
-# 435.无重叠区间
+# 860.柠檬水找零
 
-[题目链接](https://leetcode.cn/problems/non-overlapping-intervals/description/)
+[题目链接](https://leetcode.cn/problems/lemonade-change/description/)
 
 ### 思路
 
-> 贪心思想。贪心解法十分巧妙，首先求出尽可能多的重叠区间，这个通过对区间的右端点排序解决。然后尽可能是的保留的所有区间靠近左侧，对于区间的左端点排序与此类似，解题思想参考自[代码随想录](https://programmercarl.com/0435.%E6%97%A0%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%97%B4.html)。
+> 贪心。找零时使用贪心，日常生活中的找零钱问题，很简单，具体见代码。
 
 ### 时空复杂度
 
-> O(n),S(1)
+> 时间复杂度：O(n)
+>
+> 空间复杂度：由于只有5,10,20三种类型的钱，故是S(1)
 
 ### 源码
 
 ```
 class Solution {
 public:
-    int eraseOverlapIntervals(vector<vector<int>>& intervals) {
-        if (intervals.empty()) {
-            return 0;
-        }
-        
-        sort(intervals.begin(), intervals.end(), [](const auto& u, const auto& v) {
-            return u[1] < v[1];
-        });
-
-        int n = intervals.size();
-        int right = intervals[0][1];
-        int ans = 1;
-        for (int i = 1; i < n; ++i) {
-            if (intervals[i][0] >= right) {
-                ++ans;
-                right = intervals[i][1];
+    bool lemonadeChange(vector<int> &bills) {
+        int changes_5 = 0;
+        int changes_10 = 0;
+        for (auto it: bills) {
+            switch (it) {
+                case 5:
+                    changes_5++;
+                    break;
+                case 10:
+                    changes_10++;
+                    changes_5--;
+                    if (changes_5 < 0) {
+                        return false;
+                    }
+                    break;
+                case 20:
+                    if (changes_10 >= 1) {
+                        changes_10--;
+                        changes_5 -= 1;
+                    } else {
+                        changes_5 -= 3;
+                    }
+                    if (changes_5 < 0) {
+                        return false;
+                    }
+                    break;
+                default:
+                    return false;
             }
         }
-        return n - ans;
+        return true;
     }
 };
 ```
 
-# 763.划分字母区间
+# 406.根据身高重建队列
 
-[题目链接](https://leetcode.cn/problems/partition-labels/description/)
-
-### 思路
-
-> 贪心思想。容易想到，具体见代码。
-
-### 时空复杂度
-
-> O(n),S(1)
-
-### 源码
-
-```
-
-class Solution {
-public:
-    vector<int> partitionLabels(string s) {
-        vector<int> result;
-        vector<int> show_pos(26, 0);
-        for (int i = 0; i < s.size(); i++) {
-            if (i > show_pos[s[i] - 'a']) {
-                show_pos[s[i] - 'a'] = i;
-            }
-        }
-        int min_end = show_pos[s[0] - 'a'];
-        int start = 0;
-        for (int i = 1; i < s.size(); i++) {
-            if (i > min_end) {
-                result.push_back(i - start);
-                min_end = show_pos[s[i]-'a'];
-                start = i;
-            } else {
-                min_end = min_end > show_pos[s[i] - 'a'] ? min_end : show_pos[s[i] - 'a'];
-            }
-        }
-        result.push_back(min_end - start + 1);
-        return result;
-    }
-};
-```
-
-# 56.合并区间
-
-[题目链接https://leetcode.cn/problems/merge-intervals/description/]()
+[题目链接](https://leetcode.cn/problems/queue-reconstruction-by-height/description/)
 
 ### 思路
 
-> 贪心法。与435类似，具体思路见源代码。
+> 日常的排队处理，在此我看不到贪心的思想，暂且就这样做吧。
+>
+> 看到这样两个维度people[i]=[hi,ki]，首先对身高hi排序得到一个从低到高的序列，再将这个序列依照其中对应的ki依次确定每个人的位置，这种确定过程是唯一确定的。
 
 ### 时空复杂度
 
-> O(n),S(1)
+> $$O(n^2),S(1)$$
 
 ### 源码
 
@@ -102,24 +75,68 @@ public:
         return a[0] < b[0];
     }
 
-    vector<vector<int>> merge(vector<vector<int>> &intervals) {
-        sort(intervals.begin(), intervals.end(), cmp);
-        vector<vector<int>> result;
-        int max_end = intervals[0][1];
-        int start = intervals[0][0];
-        for (int i = 1; i < intervals.size(); i++) {
-            if (intervals[i][0] > max_end) {
-                result.push_back({start, max_end});
-                start = intervals[i][0];
-                max_end = intervals[i][1];
-            } else {
-                max_end = max_end > intervals[i][1] ? max_end : intervals[i][1];
+    vector<vector<int>> reconstructQueue(vector<vector<int>> &people) {
+        vector<vector<int>> result(people.size(), {-1, -1});
+        sort(people.begin(), people.end(),cmp);
+        int count = 0;
+        for (auto &it: people) {
+            count = 0;
+            for (auto &it1: result) {
+                if (count >= it[1]) {
+                    if(it1[0]>=0){
+                        continue;
+                    }
+                    it1[0] = it[0];
+                    it1[1] = it[1];
+                    break;
+                }
+                if (it1[0] == -1 || it1[0] == it[0]) {
+                    count++;
+                }
             }
         }
-        result.push_back({start,max_end});
         return result;
     }
 };
+```
 
+# 452.用最少数量的箭引爆气球
+
+[题目链接](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/description/)
+
+### 思路
+
+> 与part05重叠区间类似，在此不赘述。值得注意的是射出的气球坐标是在某个气球区间的最右侧，贪心的证明与part05的类似，不赘述。
+
+### 时空复杂度
+
+> $$O(nlogn),S(1)$$
+
+### 源码
+
+```
+class Solution {
+public:
+    static bool cmp(const vector<int> &a, const vector<int> &b) {
+        return a[0] < b[0];
+    }
+
+    int findMinArrowShots(vector<vector<int>> &points) {
+        int result = 0;
+        sort(points.begin(), points.end(), cmp);
+        int overlap_end = points[0][1];
+        for (auto it: points) {
+            if (it[0] > overlap_end) {
+                result++;
+                overlap_end = it[1];
+            } else {
+            	// 注意更新overlap_end
+                overlap_end = min(overlap_end, it[1]);
+            }
+        }
+        // 注意对最后一个气球区间的射爆
+        return result + 1;
+    }
+};
 ```
 

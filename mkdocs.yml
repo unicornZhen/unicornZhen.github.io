@@ -39,6 +39,13 @@ nav:
       - day32 贪心法part02: ALGORITHM/DaiMaSuiXiangLu/day32_Greedy_part02.md
       - day33 贪心法part03: ALGORITHM/DaiMaSuiXiangLu/day33_Greedy_part03.md
       - day34 贪心法part04: ALGORITHM/DaiMaSuiXiangLu/day34_Greedy_part04.md
+      - day36 贪心法part05: ALGORITHM/DaiMaSuiXiangLu/day36_Greedy_part05.md
+      - day37 贪心法part06: ALGORITHM/DaiMaSuiXiangLu/day37_Greedy_part06.md
+      - day38 动态规划part01: ALGORITHM/DaiMaSuiXiangLu/day38_DP_part01.md
+      - day39 动态规划part02: ALGORITHM/DaiMaSuiXiangLu/day39_DP_part02.md
+      - day40 动态规划part03: ALGORITHM/DaiMaSuiXiangLu/day40_DP_part03.md
+      - day41 动态规划part04: ALGORITHM/DaiMaSuiXiangLu/day41_DP_part04.md
+      - day43 动态规划part05: ALGORITHM/DaiMaSuiXiangLu/day43_DP_part05.md
     - ReadingNote:
       - hello-algo-readnote阅读笔记: ALGORITHM/ReadingNote/hello-algo-readnote.md
   - 项目学习:
@@ -50,6 +57,13 @@ nav:
       - p2 extendible_hash_index: PROJECTS/BUSTUB/P2_EXTENDIBLE_HASH_INDEX.md
   - 我:
     - ME/index.md
+
+  - 其他:
+    - OTHER/index.md
+    - PROJECTS:
+      - Windows上的C++多线程C/S编程: OTHER/C++_MultiThreadCS.md
+      - 研一高级算法课程作业: OTHER/MMCOL.md
+      - 多线程大量数据爬虫: OTHER/spider.md
 
 
 
