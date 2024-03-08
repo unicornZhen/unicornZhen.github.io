@@ -46,6 +46,13 @@ nav:
       - day40 动态规划part03: ALGORITHM/DaiMaSuiXiangLu/day40_DP_part03.md
       - day41 动态规划part04: ALGORITHM/DaiMaSuiXiangLu/day41_DP_part04.md
       - day43 动态规划part05: ALGORITHM/DaiMaSuiXiangLu/day43_DP_part05.md
+      - day44 动态规划part06: ALGORITHM/DaiMaSuiXiangLu/day44_DP_part06.md
+      - day45 动态规划part07: ALGORITHM/DaiMaSuiXiangLu/day45_DP_part07.md
+      - day46 动态规划part08: ALGORITHM/DaiMaSuiXiangLu/day46_DP_part08.md
+      - day47 动态规划part09: ALGORITHM/DaiMaSuiXiangLu/day47_DP_part09.md
+      - day48 动态规划part10: ALGORITHM/DaiMaSuiXiangLu/day48_DP_part10.md
+      - day50 动态规划part11: ALGORITHM/DaiMaSuiXiangLu/day49_DP_part11.md
+      - day51 动态规划part12: ALGORITHM/DaiMaSuiXiangLu/day50_DP_part12.md
     - ReadingNote:
       - hello-algo-readnote阅读笔记: ALGORITHM/ReadingNote/hello-algo-readnote.md
   - 项目学习:
@@ -61,7 +68,7 @@ nav:
   - 其他:
     - OTHER/index.md
     - PROJECTS:
-      - Windows上的C++多线程C/S编程: OTHER/C++_MultiThreadCS.md
+      - Windows上的C++多线程C/S编程: OTHER/C++_MultilThreadCS.md
       - 研一高级算法课程作业: OTHER/MMCOL.md
       - 多线程大量数据爬虫: OTHER/spider.md
 
