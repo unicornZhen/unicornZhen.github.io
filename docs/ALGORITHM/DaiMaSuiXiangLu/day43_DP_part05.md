@@ -12,7 +12,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int lastStoneWeightII(vector<int> &stones) {
@@ -50,7 +50,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int findTargetSumWays(vector<int> &nums, int target) {
@@ -95,7 +95,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int findMaxForm(vector<string> &strs, int m, int n) {

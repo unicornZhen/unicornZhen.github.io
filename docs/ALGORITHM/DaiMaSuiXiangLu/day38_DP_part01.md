@@ -14,7 +14,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int fib(int n) {
@@ -51,7 +51,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int climbStairs(int n) {
@@ -83,7 +83,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int minCostClimbingStairs(vector<int>& cost) {

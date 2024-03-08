@@ -5,7 +5,7 @@
 O(log n),S(1)
 
 ### 源码
-```
+```C++
 class Solution {
 public:
 	int search(vector<int>& nums, int target) {
@@ -35,7 +35,7 @@ public:
 O(n),S(1)
 
 ### 源码
-```
+```C++
 class Solution {
 public:
 	int removeElement(vector<int>& nums, int val) {

@@ -14,7 +14,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int integerBreak(int n) {
@@ -48,7 +48,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int numTrees(int n) {

@@ -12,7 +12,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int uniquePaths(int m, int n) {
@@ -43,7 +43,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int uniquePathsWithObstacles(vector<vector<int>> &obstacleGrid) {

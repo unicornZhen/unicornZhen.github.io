@@ -6,7 +6,7 @@ O(n)
 S(n)：原有题目结果返回需要的复杂度，可以利用O(1)的归并排序方法
 
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     vector<int> sortedSquares(vector<int>& nums) {  
@@ -57,7 +57,7 @@ note:可以进一步简化，从结果的最大值开始排序或者最小值开
 O(n),S(1)
 
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     int minSubArrayLen(int target, vector<int>& nums) {  

@@ -5,7 +5,7 @@
 * O(n):对链表扫描一遍。
 * S(1)：头节点和几个变量，常数空间。
 ### 源码
-```
+```C++
 /**  
  * Definition for singly-linked list. * struct ListNode { *     int val; *     ListNode *next; *     ListNode() : val(0), next(nullptr) {} *     ListNode(int x) : val(x), next(nullptr) {} *     ListNode(int x, ListNode *next) : val(x), next(next) {} * }; */class Solution {  
 public:  
@@ -39,7 +39,7 @@ public:
 就是标准单链表的时间空间复杂度分析方法
 
 ### 源码
-```
+```C++
 class MyLinkedList {  
     typedef struct ListNode {  
         int val;  
@@ -131,7 +131,7 @@ public:
 ### 时空复杂度
 O(n),S(1)
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     ListNode* reverseList(ListNode* head) {  

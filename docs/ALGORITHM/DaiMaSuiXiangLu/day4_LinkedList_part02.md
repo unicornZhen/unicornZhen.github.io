@@ -4,7 +4,7 @@
 ### 时空复杂度
 O(n),S(1)
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     ListNode* swapPairs(ListNode* head) {  
@@ -42,7 +42,7 @@ public:
 O(n)：一趟扫描
 S(1)
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     ListNode* removeNthFromEnd(ListNode* head, int n) {  
@@ -73,7 +73,7 @@ public:
 O(n+m)：分别扫描两个链表各两趟
 S(1)：
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {  
@@ -119,7 +119,7 @@ public:
 O(n)
 S(1)
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     ListNode *detectCycle(ListNode *head) {  
