@@ -4,7 +4,7 @@
 ### 时空复杂度
 O(n)、S(1)
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     void reverseString(vector<char>& s) {  
@@ -22,7 +22,7 @@ public:
 O(n):一趟扫描
 S(1)：常数的空间，交换的需要的临时变量char和一些下标变量
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     string reverseStr(string s, int k) {  
@@ -51,7 +51,7 @@ public:
 ### 时空复杂度
 O(n)、S(n)
 ### 源码
-```
+```C++
 #include <iostream>
 
 using namespace std;
@@ -84,7 +84,7 @@ int main(){
 O(n)：扫描两遍
 S(1):除了输出数据占用的空间，其他只占用常数空间
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     string reverseWords(string s) {  
@@ -127,7 +127,7 @@ public:
 O(n)
 S(1)
 ### 源码
-```
+```C++
 #include <iostream>
 #include <string>
 #include <algorithm>

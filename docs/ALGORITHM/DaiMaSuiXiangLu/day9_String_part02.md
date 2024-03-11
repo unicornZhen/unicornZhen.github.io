@@ -6,7 +6,7 @@
 ### 时空复杂度
 O(n+m)、S(m):n是text的长度，m是pattern的长度
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     void computeLPSArray(string pat, int M, vector<int>& lps) {  
@@ -67,7 +67,7 @@ public:
 方法二：O(n),S(n)
 方法三：O(n),S(n)
 ### 源码
-``` 
+``` C++
 class Solution {  
 public:  
     bool repeatedSubstringPattern(string s) {  

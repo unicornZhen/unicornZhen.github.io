@@ -5,7 +5,7 @@
 O(n2):四个数组分成两组，每组各自迭代组合扫描一遍，需要O(n2)
 S(n2):hash_map需要n2的空间
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     int fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4) {  
@@ -41,7 +41,7 @@ public:
 O(n)
 S(n)
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     bool canConstruct(string ransomNote, string magazine) {  
@@ -71,7 +71,7 @@ public:
 O(nlogn+n2)=O(n2):两层for循环。
 O(logn):取决与排序的复杂度，这里采用sort，也就是快排的复杂度。
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     vector<vector<int>> threeSum(vector<int>& nums) {  
@@ -112,7 +112,7 @@ public:
 O(n3):三层循环
 S(1)
 ### 源码
-```
+```C++
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int> &nums, int target) {

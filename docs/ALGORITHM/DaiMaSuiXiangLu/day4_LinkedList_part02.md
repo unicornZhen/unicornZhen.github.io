@@ -1,8 +1,13 @@
 # 24 两两交换链表中的节点
+[题目链接](https://leetcode.cn/problems/swap-nodes-in-pairs/description/)
+
 ### 思路
-简单的遍历链表，两个两个的遍历，每两个互相交换，使用节点指针记住链表的位置信息，这个很重要，防止断链。
+
+> 简单的遍历链表，两个两个的遍历，每两个互相交换，使用节点指针记住链表的位置信息，这个很重要，防止断链。
+
 ### 时空复杂度
-O(n),S(1)
+> O(n),S(1)
+
 ### 源码
 ```C++
 class Solution {  
@@ -35,12 +40,17 @@ public:
 ```
 
 
-# 19 移除链表的最后第n个节点
+# 19.移除链表的最后第n个节点
+[题目链接](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/description/)
+
 ### 思路
-一趟遍历，使用双指针找到目标节点的前驱节点，理清快指针需要领先慢指针多少。
+
+> 一趟遍历，使用双指针找到目标节点的前驱节点，理清快指针需要领先慢指针多少。
+
 ### 时空复杂度
-O(n)：一趟扫描
-S(1)
+> O(n)：一趟扫描
+> S(1)
+
 ### 源码
 ```C++
 class Solution {  
@@ -66,12 +76,17 @@ public:
 ```
 
 # 面试题 02.07.链表相交
+[题目链接](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/description/)
+
 ### 思路
-使用快慢指针在O(n+m)时间复杂度内找到公共的起始节点，先计算的出链表A和B
-的长度，依次长度设置快慢指针，再比较快慢指针是否相等找到起始节点。
+
+> 使用快慢指针在O(n+m)时间复杂度内找到公共的起始节点，先计算的出链表A和B
+> 的长度，依次长度设置快慢指针，再比较快慢指针是否相等找到起始节点。
+
 ### 时空复杂度
-O(n+m)：分别扫描两个链表各两趟
-S(1)：
+> O(n+m)：分别扫描两个链表各两趟
+> S(1)：
+
 ### 源码
 ```C++
 class Solution {  
@@ -113,11 +128,16 @@ public:
 ```
 
 # 142 环形链表 II
+[题目链接](https://leetcode.cn/problems/linked-list-cycle-ii/description/)
+
 ### 思路
-<span style="color:red">当时没有做出来，设置快慢指针，利用数学推理，得到环的入口节点</span>
+
+> <span style="color:red">当时没有做出来，设置快慢指针，利用数学推理，得到环的入口节点</span>
+
 ### 时空复杂度
-O(n)
-S(1)
+> O(n)
+> S(1)
+
 ### 源码
 ```C++
 class Solution {  

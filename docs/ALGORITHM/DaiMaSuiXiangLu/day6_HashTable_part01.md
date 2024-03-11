@@ -5,7 +5,7 @@
 O(n+m):对于两个字符串各扫描一遍
 S(1):小写字母的个数的常数空间
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     bool isAnagram(string s, string t) {  
@@ -29,7 +29,7 @@ public:
 O(n1+n2):各自扫描一遍，假设hash的查找速度为O(1)
 S(n1):set存num1中的内容
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {  
@@ -56,7 +56,7 @@ public:
 O(81\*rank):基本处于O(1状态)
 S(81\*rank)
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     bool isHappy(int n) {  
@@ -85,7 +85,7 @@ public:
 O(n):需要扫描一趟
 S(n):使用hash存已经扫描的数字
 ### 源码
-```
+```C++
 class Solution {  
 public:  
     vector<int> twoSum(vector<int> &nums, int target) {  

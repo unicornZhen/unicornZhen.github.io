@@ -1,8 +1,12 @@
 # 704.二分查找
+[题目链接](https://leetcode.cn/problems/binary-search/)
+
 ### 思路
-很简单，就最基本的二分查找
+
+> 很简单，就最基本的二分查找
+
 ### 时空复杂度
-O(log n),S(1)
+> O(log n),S(1)
 
 ### 源码
 ```C++
@@ -15,11 +19,11 @@ public:
 		while(start<=end){
 			middle=(start+end)/2;
 			if(nums[middle]<target){
-			start=middle+1;
+				start=middle+1;
 			}else if(nums[middle]==target){
-			return middle;
+				return middle;
 			}else{
-			end=middle-1;
+				end=middle-1;
 			}
 		}
 		return -1;
@@ -29,10 +33,14 @@ public:
 
 # 27.移除元素
 
+[题目链接](https://leetcode.cn/problems/remove-element/description/)
+
 ### 思路
-双指针法
+
+> 双指针法
+
 ### 时空复杂度
-O(n),S(1)
+> O(n),S(1)
 
 ### 源码
 ```C++
@@ -50,8 +58,8 @@ public:
 				}
 				p_end--;
 			}else{
-			total++;
-			p_start++;
+				total++;
+				p_start++;
 			}
 		}
 		return total;

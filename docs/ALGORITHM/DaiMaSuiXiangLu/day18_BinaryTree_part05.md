@@ -20,7 +20,7 @@ O(n)、S(n)
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int findBottomLeftValue(TreeNode* root) {
@@ -68,7 +68,7 @@ O(n)、S(n)
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     vector<vector<int>> pathSum(TreeNode* root, int targetSum) {
@@ -115,7 +115,7 @@ O(n)、S(n)
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode *buildTree(vector<int> &inorder, vector<int> &postorder) {
