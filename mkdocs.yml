@@ -58,6 +58,9 @@ nav:
       - day54 动态规划part15: ALGORITHM/DaiMaSuiXiangLu/day54_DP_part15.md
       - day55 动态规划part16: ALGORITHM/DaiMaSuiXiangLu/day55_DP_part16.md
       - day57 动态规划part17: ALGORITHM/DaiMaSuiXiangLu/day57_DP_part17.md
+      - day58 单调栈part01: ALGORITHM/DaiMaSuiXiangLu/day58_MonoStack_part01.md
+      - day59 单调栈part02: ALGORITHM/DaiMaSuiXiangLu/day59_MonoStack_part02.md
+      - day60 单调栈part03: ALGORITHM/DaiMaSuiXiangLu/day60_MonoStack_part03.md
     - ReadingNote:
       - hello-algo-readnote阅读笔记: ALGORITHM/ReadingNote/hello-algo-readnote.md
   - 项目学习:

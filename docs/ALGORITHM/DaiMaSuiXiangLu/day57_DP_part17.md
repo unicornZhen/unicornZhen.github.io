@@ -12,7 +12,7 @@
 >
 > 方法三：Manacher,可以在O(n)的时间复杂度找s的最大回文串，对这个算法有点印象即可，会用即可，不要求理解和掌握。
 >
-> 方法一是我想出来的，方法二和三是[leetcode题解](https://leetcode.cn/problems/palindromic-substrings/solutions/379987/hui-wen-zi-chuan-by-leetcode-solution/)，注意方法三的做法，空间复杂度为S(1)
+> 方法一是我想出来的，方法二和三是[leetcode题解](https://leetcode.cn/problems/palindromic-substrings/solutions/379987/hui-wen-zi-chuan-by-leetcode-solution/)，注意方法二的做法，空间复杂度为S(1)
 
 ### 时空复杂度
 
@@ -78,21 +78,49 @@ public:
 
 
 
-## 题目
+## 516.最长回文子串
 
-[题目链接]()
+[516. 最长回文子序列 - 力扣（LeetCode）](https://leetcode.cn/problems/longest-palindromic-subsequence/)
 
 ### 思路
 
-> 
+> 动态规划。与647.回文子串类似，具体见源代码。
 
 ### 时空复杂度
 
-> 
+> $$O(n^2),S(n^2)$$
 
 ### 源码
 
 ```C++
+class Solution {
+public:
+    int longestPalindromeSubseq(string s) {
+        int len = (int) s.length();
+        int result = 1;
 
+        // dp[i][j]表示s[i:j]的最长回文子序列
+        vector<vector<int>> dp(len, vector<int>(len));
+        for (int i = 0; i < len - 1; i++) {
+            dp[i][i] = 1;
+            dp[i][i + 1] = (s[i] == s[i + 1] ? 2 : 1);
+            result=max(dp[i][i+1],result);
+        }
+        dp[len - 1][len - 1] = 1;
+
+        for (int d = 2; d < len; d++) {
+            for (int i = 0; i < len - d; i++) {
+                if (s[i] == s[i + d]) {
+                    dp[i][i + d] = dp[i + 1][i + d - 1] + 2;
+                } else {
+                    dp[i][i + d] = max(dp[i + 1][i + d], dp[i][i + d - 1]);
+                }
+                result = max(dp[i][i + d], result);
+            }
+        }
+
+        return result;
+    }
+};
 ```
 

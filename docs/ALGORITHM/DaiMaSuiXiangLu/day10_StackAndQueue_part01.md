@@ -1,9 +1,17 @@
-# 232.用栈实现队列
+## 232.用栈实现队列
+
+[232. 用栈实现队列 - 力扣（LeetCode）](https://leetcode.cn/problems/implement-queue-using-stacks/description/)
+
 ### 思路
-两个栈s1,s2实现队列，s1倒入到s2中再弹出，从而满足队列的先进先出。注意一些优化的小技巧，pop之后不立马把s2中的内容倒入s1中。
+
+> 两个栈s1,s2实现队列，s1倒入到s2中再弹出，从而满足队列的先进先出。注意一些优化的小技巧，pop之后不立马把s2中的内容倒入s1中。
+
 ### 时空复杂度
+
+> 分析各项操作的时间复杂度较为简单，在此不赘述。
+
 ### 源码
-```
+```C++
 class MyQueue {  
 public:  
     MyQueue() {  
@@ -50,11 +58,16 @@ private:
 };
 ```
 
-# 232.用队列实现栈
+## 225.用队列实现栈
+
+[225. 用队列实现栈 - 力扣（LeetCode）](https://leetcode.cn/problems/implement-stack-using-queues/description/)
+
 ### 思路
-* 题解中方法：本质上使得队列中的元素的顺序是一个栈，所以需要做入栈时的维护操作，其他操作都是O(1)，方法上比我的方法要好一些。
-**题解用一个队列实现栈的源码**
-```
+
+> 题解中方法：本质上使得队列中的元素的顺序是一个栈，所以需要做入栈时的维护操作，其他操作都是O(1)，方法上比我的方法要好一些。
+> **题解用一个队列实现栈的源码**
+
+```C++
 class MyStack {  
 public:  
     queue<int> q;  
@@ -93,12 +106,14 @@ public:
     }  
 };
 ```
-* 我采用的方法是pop时和top时取得队列的首个元素，需要对pop和top进行一些操作，push复杂度为O(1)，pop和top复杂度为O(n)
+> 我采用的方法是pop时和top时取得队列的首个元素，需要对pop和top进行一些操作，push复杂度为O(1)，pop和top复杂度为O(n)
+
 ### 时空复杂度
-时间复杂度：push复杂度为O(1)，pop和top复杂度为O(n)
-S(n)：使用一个队列
+> 时间复杂度：push复杂度为O(1)，pop和top复杂度为O(n)
+> S(n)：使用一个队列
+
 ### 源码
-```
+```C++
 class MyStack {  
 public:  
     MyStack() {  

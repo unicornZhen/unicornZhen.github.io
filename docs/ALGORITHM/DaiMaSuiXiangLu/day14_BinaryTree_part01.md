@@ -4,7 +4,7 @@
 # 二叉树的迭代遍历
 其中值得注意的是二叉树的统一迭代遍历（或许通过模仿递归遍历的中栈帧的行为并同时做一些优化操作也能实现另外一种统一迭代遍历），这里的统一迭代遍历采用标记法的方式。
 中序的统一迭代遍历源码：
-```
+```C++
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
@@ -34,7 +34,7 @@ public:
 ```
 
 前序的统一迭代遍历：
-```
+```C++
 class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {

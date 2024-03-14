@@ -1,10 +1,16 @@
-# 28.字符串匹配
+## 28.字符串匹配
+
+[28. 找出字符串中第一个匹配项的下标 - 力扣（LeetCode）](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+
 ### 思路
-方法一：实现KMP算法（KMP算法比较难，懂得大致思路和KMP的应用就行，让gpt实现就行）
-方法二：直接调用字符串的find方法
-本题采用的是方法一，实现KMP算法
+
+> 方法一：实现KMP算法（KMP算法比较难，懂得大致思路和KMP的应用就行，让gpt实现就行）
+> 方法二：直接调用字符串的find方法
+> 本题采用的是方法一，实现KMP算法
+
 ### 时空复杂度
-O(n+m)、S(m):n是text的长度，m是pattern的长度
+> O(n+m)、S(m):n是text的长度，m是pattern的长度
+
 ### 源码
 ```C++
 class Solution {  
@@ -57,15 +63,21 @@ public:
 };
 ```
 
-# 459.重复的子字符串
+## 459.重复的子字符串
+
+[459. 重复的子字符串 - 力扣（LeetCode）](https://leetcode.cn/problems/repeated-substring-pattern/description/)
+
 ### 思路
-方法一：蛮力法，注意分析题目，减少不必要的遍历
-方法二：(s+s).find(s,1)!=s.size,其中s为输入字符串，注意理解条件的充分性和必要性
-方法三：使用KMP算法，但不懂如何使用
+
+> 方法一：蛮力法，注意分析题目，减少不必要的遍历
+> 方法二：(s+s).find(s,1)!=s.size,其中s为输入字符串，注意理解条件的充分性和必要性
+> 方法三：使用KMP算法，但不懂如何使用
+
 ### 时空复杂度
-方法一：O(n2),S(1)
-方法二：O(n),S(n)
-方法三：O(n),S(n)
+> 方法一：$$O(n^2)$$,S(1)
+> 方法二：O(n),S(n)
+> 方法三：O(n),S(n)
+
 ### 源码
 ``` C++
 class Solution {  
