@@ -18,7 +18,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     vector<vector<int>> findSubsequences(vector<int> &nums) {
@@ -57,37 +57,7 @@ private:
 
 # 46.全排列
 
-[题目链接class Solution {
-public:
-    vector<vector<int>> permuteUnique(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
-        vector<vector<int>> result;
-        vector<int> path;
-        vector<bool> visited(nums.size(),false);
-        dfs(result,path,nums,visited);
-        return result;
-    }
-private:
-    void dfs(vector<vector<int>> &result,vector<int> &path,const vector<int> &nums,vector<bool> &visited){
-        // boundary conditions
-        if(path.size()>=nums.size()){
-            result.push_back(path);
-        }
-        
-        // start dfs
-        int pre_val=INT32_MIN;
-        for(int i=0;i<nums.size();i++){
-            if(!visited[i]&&nums[i]!=pre_val){
-                pre_val=nums[i];
-                path.push_back(nums[i]);
-                visited[i]=true;
-                dfs(result,path,nums,visited);
-                visited[i]=false;
-                path.pop_back();
-            }
-        }
-    }
-};](https://leetcode.cn/problems/permutations/description/)
+[题目链接](https://leetcode.cn/problems/permutations/description/)
 
 ### 思路
 
@@ -101,7 +71,7 @@ private:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     vector<vector<int>> permute(vector<int> &nums) {
@@ -149,7 +119,7 @@ private:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {

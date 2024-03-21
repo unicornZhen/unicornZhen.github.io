@@ -14,7 +14,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int monotoneIncreasingDigits(int n) {
@@ -35,7 +35,7 @@ public:
 };
 ```
 
-# 968.监控二叉树（TODO:目前还看不懂）
+# 968.监控二叉树
 
 [题目链接](https://leetcode.cn/problems/binary-tree-cameras/description/)
 
@@ -49,7 +49,7 @@ public:
 
 ### 源码
 
-```
+```C++
 struct Status {
 // 状态a：root 必须放置摄像头的情况下，覆盖整棵树需要的摄像头数目。
 // 状态b：覆盖整棵树需要的摄像头数目，无论 root 是否放置摄像头。

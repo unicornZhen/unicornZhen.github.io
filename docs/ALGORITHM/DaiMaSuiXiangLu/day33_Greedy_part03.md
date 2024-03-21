@@ -8,11 +8,11 @@
 
 ### 时空复杂度
 
-> 需要先对nums进行排序，为了简化取反时的判断与nums全部值大于0但k大于0,故选择使用绝对值的比较作为排序的比较函数。故时间复杂度O(nlogn),S(logn)（空间复杂度取决于排序的空间复杂度，sort一般采用快排为O(logn)）。
+> 需要先对nums进行排序，为了简化取反时的判断与nums全部值大于0但k大于0,故选择使用绝对值的比较作为排序的比较函数。故时间复杂度$$O(nlogn),S(logn)$$（空间复杂度取决于排序的空间复杂度，sort一般采用快排为O(nlogn)）。
 
 ### 源码
 
-```
+```C++
 class Solution {
 static bool cmp(int a, int b) {
     return abs(a) > abs(b); 
@@ -49,7 +49,7 @@ public:
 
 ### 源码（下面仅展示方法一的解答）
 
-```
+```C++
 class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
@@ -99,7 +99,7 @@ public:
 
 **方法一源码**
 
-```
+```C++
 class Solution {
 // TODO：可以进一步优化空间，去掉r_candies，只扫描两遍。
 public:
@@ -130,7 +130,7 @@ public:
 
 **方法二源码**
 
-```                                              
+```                                              C++
 class Solution {
 public:
     int candy(vector<int>& ratings) {

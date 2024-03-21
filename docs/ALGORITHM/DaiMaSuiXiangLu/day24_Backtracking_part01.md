@@ -4,7 +4,7 @@
 
 接下来，我们尝试将回溯的“尝试、回退、剪枝”的主体框架提炼出来，提升代码的通用性。 在以下框架代码中，state 表示问题的当前状态，choices 表示当前状态下可以做出的选择：
 
-```
+```C++
 /* 回溯算法框架 */ 
 void backtrack(State *state, vector<Choice *> &choices, vector<State *> &res) { 
 	// 判断是否为解 
@@ -40,7 +40,7 @@ void backtrack(State *state, vector<Choice *> &choices, vector<State *> &res) {
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     vector<vector<int>> combine(int n, int k) {
@@ -55,7 +55,6 @@ private:
             result.push_back(path);
             return;
         }
-
         k--;
         for(int i=start;i<=n-k;i++){
             path.push_back(i);

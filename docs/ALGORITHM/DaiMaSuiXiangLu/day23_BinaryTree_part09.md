@@ -15,7 +15,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode* trimBST(TreeNode* root, int low, int high) {
@@ -45,11 +45,11 @@ public:
 
 ### 时空复杂度
 
-> O(n),logn
+> $$O(n),S(logn)$$
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode* sortedArrayToBST(vector<int>& nums) {
@@ -78,7 +78,7 @@ private:
 
 ### 思路
 
-> 递归法。初步想法中序遍历BST，使用数组按照升序储存BST中的元素，再中序遍历，使用这个数组得到各个节点应该累加的值。仔细思考可以进一步优化，一遍遍历即可完成，只需要中序遍历时交换左右子树的遍历顺序即可按照降序次序访问二叉树的每个节点。关键是如何得到二叉树的将序顺序。
+> 递归法。初步想法中序遍历BST，使用数组按照升序储存BST中的元素，再中序遍历，使用这个数组得到各个节点应该累加的值。仔细思考可以进一步优化，一遍遍历即可完成，只需要中序遍历时交换左右子树的遍历顺序即可按照降序次序访问二叉树的每个节点。关键是如何得到二叉树的降序遍历顺序。
 
 ### 时空复杂度
 
@@ -86,7 +86,7 @@ private:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode* convertBST(TreeNode* root) {

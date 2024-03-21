@@ -14,7 +14,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
@@ -22,7 +22,8 @@ public:
         sort(s.begin(),s.end());
 
         int result=0;
-        int i_g=0,i_s=0;
+        int i_g=0;
+        int i_s=0;
         while(i_g<g.size()&&i_s<s.size()){
             if(s[i_s]>=g[i_g]){
                 i_g++;
@@ -45,7 +46,13 @@ public:
 
 > 贪心思想。
 >
-> 设最长摆动序列为target。贪心的策略分为两步走：i.选择nums[0]作为target[0]的第一个元素；ii.target的其余的target[i]都是都是nums在target[i-1]与target[i]中的第一个极值点。经过数学上的证明可以得到这样的贪心策略是能得到最长摆动序列。
+> 设最长摆动序列为target。贪心的策略分为两步走：
+>
+> i.选择nums[0]作为target[0]的第一个元素。
+>
+> ii.target的其余的target[i]都是都是nums在target[i-1]与target[i]中的第一个极值点。
+>
+> 经过数学上的证明可以得到这样的贪心策略是能得到最长摆动序列。
 
 ### 时空复杂度
 
@@ -53,7 +60,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int wiggleMaxLength(vector<int> &nums) {
@@ -97,7 +104,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {

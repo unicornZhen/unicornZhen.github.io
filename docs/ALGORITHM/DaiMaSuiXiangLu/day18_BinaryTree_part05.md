@@ -97,7 +97,7 @@ private:
 
 ```
 
-## 106.根据后序遍历和中序遍历构造二叉树（同类的有：105.根据前序遍历和后序遍历构造二叉树）
+## 106.根据后序遍历和中序遍历构造二叉树（同类的有：105.根据前序遍历和中序遍历构造二叉树）
 
 [题目链接](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/)
 

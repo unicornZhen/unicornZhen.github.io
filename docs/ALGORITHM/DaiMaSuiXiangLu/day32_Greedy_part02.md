@@ -16,7 +16,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -37,7 +37,7 @@ public:
 
 ### 思路
 
-> 贪心法。按照日常知识选择贪心策略，决策过程是选择不断跳到最好的新的起跳点，即nums[i]+i是所有可以到达的位置中的最大，可以解决问题，但可以进一步优化，至于时间复杂度稳定为O(n)
+> 贪心法。按照日常知识选择贪心策略，决策过程是选择不断跳到最好的新的起跳点，即nums[i]+i是所有可以到达的位置中的最大，可以解决问题，但可以进一步优化时间复杂度到O(n)
 
 ### 时空复杂度
 
@@ -47,7 +47,7 @@ public:
 
 ### 源码
 
-```
+```C++
 //自己的代码
 class Solution {
 public:
@@ -107,7 +107,7 @@ public class Solution {
 
 ### 源码
 
-```
+```C++
 class Solution {
     public int jump(int[] nums) {
         int length = nums.length;

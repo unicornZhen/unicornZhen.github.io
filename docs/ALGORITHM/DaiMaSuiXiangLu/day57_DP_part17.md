@@ -63,7 +63,7 @@ public:
     int countSubstrings(string s) {
         int n = s.size(), ans = 0;
         for (int i = 0; i < 2 * n - 1; ++i) {
-            // 统一了奇数和偶数的hui wen
+            // 统一处理了奇数和偶数的回文中心的情况
             int l = i / 2, r = i / 2 + i % 2;
             while (l >= 0 && r < n && s[l] == s[r]) {
                 --l;
@@ -78,7 +78,7 @@ public:
 
 
 
-## 516.最长回文子串
+## 516.最长回文子序列
 
 [516. 最长回文子序列 - 力扣（LeetCode）](https://leetcode.cn/problems/longest-palindromic-subsequence/)
 

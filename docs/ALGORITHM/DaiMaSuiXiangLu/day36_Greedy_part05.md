@@ -12,7 +12,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int eraseOverlapIntervals(vector<vector<int>>& intervals) {
@@ -52,7 +52,7 @@ public:
 
 ### 源码
 
-```
+```C++
 
 class Solution {
 public:
@@ -60,9 +60,7 @@ public:
         vector<int> result;
         vector<int> show_pos(26, 0);
         for (int i = 0; i < s.size(); i++) {
-            if (i > show_pos[s[i] - 'a']) {
-                show_pos[s[i] - 'a'] = i;
-            }
+            show_pos[s[i] - 'a'] = i;
         }
         int min_end = show_pos[s[0] - 'a'];
         int start = 0;
@@ -83,7 +81,7 @@ public:
 
 # 56.合并区间
 
-[题目链接https://leetcode.cn/problems/merge-intervals/description/]()
+[题目链接](https://leetcode.cn/problems/merge-intervals/description/)
 
 ### 思路
 
@@ -95,7 +93,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     static bool cmp(const vector<int> &a, const vector<int> &b) {

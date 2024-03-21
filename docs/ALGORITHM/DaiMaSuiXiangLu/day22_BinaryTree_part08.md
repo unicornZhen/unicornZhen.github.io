@@ -18,7 +18,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
@@ -54,7 +54,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode* insertIntoBST(TreeNode* root, int val) {
@@ -96,7 +96,7 @@ O(logn),S(logn)
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
@@ -111,7 +111,6 @@ public:
             root->right = deleteNode(root->right, key);
         } else {
             // 当前节点就是要删除的节点
-
             // 情况1: 没有子节点或只有一个子节点
             if (root->left == nullptr) {
                 TreeNode* temp = root->right;

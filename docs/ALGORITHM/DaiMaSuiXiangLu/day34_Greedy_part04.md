@@ -14,7 +14,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     bool lemonadeChange(vector<int> &bills) {
@@ -58,7 +58,7 @@ public:
 
 ### 思路
 
-> 日常的排队处理，在此我看不到贪心的思想，暂且就这样做吧。
+> 日常的排队处理，一个一个地确定位置也算作是贪心思想吧。
 >
 > 看到这样两个维度people[i]=[hi,ki]，首先对身高hi排序得到一个从低到高的序列，再将这个序列依照其中对应的ki依次确定每个人的位置，这种确定过程是唯一确定的。
 
@@ -68,7 +68,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     static bool cmp(const vector<int> &a, const vector<int> &b) {
@@ -114,7 +114,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     static bool cmp(const vector<int> &a, const vector<int> &b) {

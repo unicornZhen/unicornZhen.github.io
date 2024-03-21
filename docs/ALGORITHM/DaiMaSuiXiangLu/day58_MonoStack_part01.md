@@ -61,8 +61,7 @@ public:
         int len2 = (int) nums2.size();
         int len1 = (int) nums1.size();
         unordered_map<int, int> m;
-        vector<int> result(len
-                           1, -1);
+        vector<int> result(len1, -1);
         for (int i = 0; i < len1; i++) {
             m[nums1[i]] = i;
         }

@@ -12,7 +12,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     int getMinimumDifference(TreeNode* root) {
@@ -44,23 +44,21 @@ public:
 };
 ```
 
-
-
-# 501.在BST中找众数
+## 501.在BST中找众数
 
 [题目链接](https://leetcode.cn/problems/find-mode-in-binary-search-tree/description/)
 
 ### 思路
 
-与530的解题思路类似，同样借鉴二叉树的中序遍历，代码写得有些丑陋和冗余，懒得修改了。
+> 与530的解题思路类似，同样借鉴二叉树的中序遍历，代码写得有些丑陋和冗余，懒得修改了。
 
 ### 时空复杂度
 
-O(n)、S(n)
+> O(n)、S(n)
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     vector<int> findMode(TreeNode* root) {
@@ -119,21 +117,21 @@ public:
 
 ### 思路
 
-设这两个节点为p和q
-
-方法一：先得到p和q的路径（dfs或者迭代的后序遍历），在根据这两条路径找到最近公共祖先。
-
-方法二：直接根据题目递归得出最近公共祖先，相比一更快，扫描一遍树的节点即可得出答案。
-
-本题实现采用方法一，方法一比较简单不再赘述。值的注意的是方法二，方法二的设计比较巧妙，递归的自底向上的回溯保证得到的答案是最近公共祖先。
+> 设这两个节点为p和q
+>
+> 方法一：先得到p和q的路径（dfs或者迭代的后序遍历），在根据这两条路径找到最近公共祖先。
+>
+> 方法二：直接根据题目递归得出最近公共祖先，相比一更快，扫描一遍树的节点即可得出答案。
+>
+> 本题实现采用方法一，方法一比较简单不再赘述。值的注意的是方法二，方法二的设计比较巧妙，递归的自底向上的回溯保证得到的答案是最近公共祖先。
 
 ### 时空复杂度
 
-两种方法的时空复杂度都是O(n)、S(n)
+> 两种方法的时空复杂度都是O(n)、S(n)。
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {

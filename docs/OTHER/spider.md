@@ -12,7 +12,7 @@ bs4：解析网页文件html的解析器，本质上是一颗网页树，节点�
 
 ## 源码
 
-```
+```python
 import requests
 from bs4 import BeautifulSoup
 import re

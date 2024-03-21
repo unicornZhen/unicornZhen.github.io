@@ -16,13 +16,13 @@
 >
 > 方法一的时间复杂度不便计算，空间复杂度O(m)。
 >
-> 方法二的时间复杂度为$$mlogm$$,空间复杂度为O(m)。
+> 方法二的时间复杂度为$$O(mlogm)$$,空间复杂度为$$O(m)$$。
 
 ### 源码
 
 **方法一源码**
 
-```
+```C++
 class Solution {
 public:
     vector<string> findItinerary(vector<vector<string>> &tickets) {
@@ -82,7 +82,7 @@ private:
 
 **方法二的源码**
 
-```
+```C++
 class Solution {
 public:
     unordered_map<string, priority_queue<string, vector<string>, std::greater<string>>> vec;
@@ -122,7 +122,7 @@ public:
 
 **51.N皇后源码**
 
-```
+```C++
 class Solution {
  public:
 	vector<vector<string>> solveNQueens(int n) {

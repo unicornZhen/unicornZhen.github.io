@@ -1,4 +1,4 @@
-# 654.最大二叉树
+## 654.最大二叉树
 
 [题目链接](https://leetcode.cn/problems/maximum-binary-tree/description/)
 
@@ -6,9 +6,9 @@
 
 > 方法一：按照题目所说的采用递归方法。
 >
-> 方法二：使用单调栈。要构建两个分别用于构建左子树和右子树的单调栈。
+> 方法二：使用单调栈。注意到对于任何一个节点的左节点对应于左要构建两个分别用于构建左子树和右子树的单调栈。
 >
-> 本人虽然使用的方法一解答题目，但由于方法一过于简单，在这里只介绍方法二,注意方法二目前还未去详细理解。
+> 本人虽然使用的方法一解答题目，但由于方法一过于简单，大致使用单调栈的思想是懂了，还是不太懂方法二的做法，暂时就这样吧。
 
 ### 时空复杂度
 
@@ -54,9 +54,7 @@ public:
 
 ```
 
-
-
-# 617.合并二叉树
+## 617.合并二叉树
 
 [题目链接](https://leetcode.cn/problems/merge-two-binary-trees/description/)
 
@@ -74,7 +72,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
@@ -111,7 +109,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     TreeNode* searchBST(TreeNode* root, int val) {
@@ -146,7 +144,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     bool isValidBST(TreeNode* root) {

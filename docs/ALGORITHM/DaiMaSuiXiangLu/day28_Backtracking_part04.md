@@ -18,7 +18,7 @@
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     vector<string> restoreIpAddresses(string s) {
@@ -93,7 +93,7 @@ private:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int> &nums) {
@@ -120,7 +120,7 @@ public:
 
 ### 思路
 
-> 回溯法。有两种设计思路，第一种：决策途径为选择0个元素->选择一个元素->选择二个元素->...->选择n个元素。，故决策树中的每个节点都是一个解。第二种：决策是是否第一个元素->是否选择第二个元素->...->选择第n个元素，故决策树中每个叶子节点是一个解。
+> 回溯法。有两种设计思路，第一种：决策途径为选择0个元素->选择一个元素->选择二个元素->...->选择n个元素，故决策树中的每个节点都是一个解。第二种：决策是是否第一个元素->是否选择第二个元素->...->选择第n个元素，故决策树中每个叶子节点是一个解。
 >
 > 本题采用第二种解答方法，第二种方法需要探索的状态更少，但时间复杂度还是一样。
 
@@ -130,7 +130,7 @@ public:
 
 ### 源码
 
-```
+```C++
 class Solution {
 public:
     vector<vector<int>> subsetsWithDup(vector<int> &nums) {
