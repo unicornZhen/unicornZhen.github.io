@@ -76,7 +76,7 @@ nav:
   - 其他:
     - OTHER/index.md
     - PROJECTS:
-      - Windows上的C++多线程C/S编程: OTHER/C++_MultiThreadCS.md
+      - Windows上的C++多线程C/S编程: OTHER/C++_MultilThreadCS.md
       - 研一高级算法课程作业: OTHER/MMCOL.md
       - 多线程大量数据爬虫: OTHER/spider.md
 
